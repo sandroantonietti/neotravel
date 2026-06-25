@@ -1,0 +1,62 @@
+/* ─── HERO ─── */
+.hero {
+  padding: clamp(72px, 11vw, 110px) var(--gutter) clamp(56px, 8vw, 90px);
+  max-width: var(--max-width-wide);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5.5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+  color: var(--white);
+  margin-bottom: 24px;
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heroSub {
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  color: var(--muted);
+  max-width: 540px;
+  margin: 0 auto 48px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/* ─── Chat block ─── */
+.chatBlock {
+  max-width: 856px;
+  margin: 0 auto;
+}
+
+.chatLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  color: var(--accent);
+  margin-bottom: 18px;
+}
+
+.chatLabelDot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+  flex-shrink: 0;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.35; }
+}

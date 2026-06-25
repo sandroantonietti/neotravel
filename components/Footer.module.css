@@ -1,0 +1,175 @@
+.footer {
+  margin-top: clamp(64px, 10vw, 96px);
+  background: var(--bg-footer);
+  border-top: 1px solid var(--border);
+  padding: 48px var(--gutter) 32px;
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.logoText {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0;
+  margin-bottom: 14px;
+  letter-spacing: -0.04em;
+}
+
+.logoMain {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.logoTld {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.brand p {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+.contact {
+  font-size: 13px;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact:hover {
+  color: var(--white);
+}
+
+/* ─── Réseaux sociaux ─── */
+.social {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s, background 0.2s, border-color 0.2s;
+}
+
+.socialLink:hover {
+  color: var(--accent);
+  background: rgba(216, 231, 98, 0.08);
+  border-color: rgba(216, 231, 98, 0.3);
+}
+
+/* ─── Colonnes de navigation ─── */
+.col h4 {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+.col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.col ul li a {
+  font-size: 13px;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.col ul li a:hover {
+  color: var(--white);
+}
+
+/* Éléments de navigation purement visuels */
+.disabled {
+  font-size: 13px;
+  color: var(--muted);
+  opacity: 0.45;
+  pointer-events: none;
+  cursor: default;
+  user-select: none;
+}
+
+/* ─── Barre de bas de page ─── */
+.bottom {
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.bottom p {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.rgpd {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.rgpd a {
+  font-size: 12px;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.rgpd a:hover {
+  color: var(--accent);
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+  .top {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
