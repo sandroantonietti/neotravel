@@ -54,3 +54,5 @@ Navigateur → POST /api/chat (API Route Next.js)
 ```
 
 L'URL du webhook n'est jamais exposée au client : seule `/api/chat` est appelée par le frontend.
+
+Lien de la production : https://neotravel-brown.vercel.app/
